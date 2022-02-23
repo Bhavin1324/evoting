@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+.hamburger.active .bar:nth-child(2){
+    @apply opacity-0;    
+}
+.hamburger.active .bar:nth-child(1){
+    @apply rotate-45 translate-y-2.5;    
+}
+.hamburger.active .bar:nth-child(3){
+    @apply -rotate-45 -translate-y-2.5;
+}
+.nav-menu.active{
+    @apply right-0;
+}
+@tailwind utilities;
